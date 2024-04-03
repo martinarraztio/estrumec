@@ -47,3 +47,20 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+/* Estilos para la galería de fotos */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    max-width: 1%; /* Hace que la imagen se ajuste al ancho máximo del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+    margin: 10px; /* Añade un margen entre las imágenes */
+    border-radius: 5px; /* Agrega un borde redondeado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+}
+
