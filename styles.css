@@ -43,24 +43,26 @@ footer {
     color: #fff; /* Texto blanco */
     padding: 10px;
     text-align: center;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
 
 
-/* Estilos para la galería de fotos */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 100%; /* Establecer el ancho máximo del contenedor */
+    padding: 0 20px; /* Añadir relleno horizontal para evitar que las imágenes estén pegadas a los bordes */
+    box-sizing: border-box; /* Incluir el relleno en el cálculo del ancho */
 }
 
 .gallery img {
-    max-width: 1%; /* Hace que la imagen se ajuste al ancho máximo del contenedor */
-    height: auto; /* Mantiene la proporción de aspecto de la imagen */
-    margin: 10px; /* Añade un margen entre las imágenes */
-    border-radius: 5px; /* Agrega un borde redondeado */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra suave */
+    max-width: calc(33.33% - 20px); /* Ajustar el ancho máximo de la imagen a un tercio del contenedor menos el margen */
+    width: 100%; /* Asegurar que la imagen ocupe todo el espacio disponible */
+    height: auto;
+    margin: 10px; /* Ajustar el margen entre las imágenes */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
